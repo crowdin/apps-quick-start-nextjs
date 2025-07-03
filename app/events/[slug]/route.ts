@@ -58,7 +58,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ slu
         domain: eventBody.domain,
         organizationId: Number(eventBody.organizationId),
         appId: eventBody.appId,
-        addSecret: eventBody.appSecret,
+        appSecret: eventBody.appSecret,
         userId: Number(eventBody.userId),
         baseUrl: eventBody.baseUrl,
         accessToken: newTokenData.accessToken,

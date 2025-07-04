@@ -13,7 +13,7 @@ model Organization {
   domain               String?
   organizationId       Int
   appId                String
-  addSecret            String
+  appSecret            String
   userId               Int
   baseUrl              String
   accessToken          String

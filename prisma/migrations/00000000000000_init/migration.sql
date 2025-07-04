@@ -4,7 +4,7 @@ CREATE TABLE "organizations" (
     "domain" TEXT,
     "organizationId" INTEGER NOT NULL,
     "appId" TEXT NOT NULL,
-    "addSecret" TEXT NOT NULL,
+    "appSecret" TEXT NOT NULL,
     "userId" INTEGER NOT NULL,
     "baseUrl" TEXT NOT NULL,
     "accessToken" TEXT NOT NULL,

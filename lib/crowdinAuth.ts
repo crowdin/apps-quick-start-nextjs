@@ -113,7 +113,7 @@ export async function getValidOrganizationToken(internalOrgId: string): Promise<
 
   const newTokenData = await refreshCrowdinToken({
     appId: organization.appId,
-    appSecret: organization.addSecret,
+    appSecret: organization.appSecret,
     domain: organization.domain || '',
     userId: organization.userId,
   });

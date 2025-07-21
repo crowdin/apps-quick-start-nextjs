@@ -1,5 +1,5 @@
 import { prisma } from './prisma';
-import type { Organization } from '@prisma/client';
+import type { Organization } from '.prisma/client';
 
 /**
  * Partial response that we receive from Crowdin's OAuth service when we

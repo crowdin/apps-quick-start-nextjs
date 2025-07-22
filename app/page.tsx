@@ -12,45 +12,9 @@ import { CopyButton } from '@/components/copy-button';
  */
 export default async function Home() {
   const manifestUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/manifest.json`;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-
-  // Structured data for SEO
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'WebApplication',
-    name: 'Crowdin App - Quick Start Guide',
-    description:
-      'A sample Crowdin App demonstrating best practices for building localization platform integrations.',
-    url: baseUrl,
-    applicationCategory: 'DeveloperApplication',
-    operatingSystem: 'Web',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'USD',
-    },
-    creator: {
-      '@type': 'Organization',
-      name: 'Crowdin',
-      url: 'https://crowdin.com',
-    },
-    featureList: [
-      'Custom file format processing',
-      'API integration with Crowdin',
-      'Project menu integration',
-      'OAuth authentication',
-      'Webhook event handling',
-    ],
-  };
 
   return (
     <>
-      {/* Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
       {/* Skip Link for Screen Readers */}
       <a
         href="#main-content"
